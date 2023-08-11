@@ -1,4 +1,12 @@
-# Responsive Portfolio Website
+# My Portfolio
+
+**Includes:**
+
+1. Home
+2. About Me
+3. My Exp.
+4. Tools and skills
+5. Contact Me
 
 - Responsive Personal Portfolio Website Using HTML CSS & JavaScript
 - Contains animations when scrolling.
