@@ -21,7 +21,7 @@
          <nav class="nav container">
             <a href="#logo" class="nav__logo">
                <span class="nav__logo-circle">DK</span>
-               <span class="nav__logo-name">Dmytro Kostiuk.</span>
+               <span class="nav__logo-name">Dmytro Kostiuk</span>
             </a>
 
             <div class="nav__menu" id="nav-menu">
@@ -31,7 +31,7 @@
 
                <ul class="nav__list">
                   <li class="nav__item">
-                     <a href="#home" class="nav__link">Home</a>
+                     <a href="#home" class="nav__link active-link">Home</a>
                   </li>
 
                   <li class="nav__item">
@@ -39,11 +39,11 @@
                   </li>
 
                   <li class="nav__item">
-                     <a href="#experience" class="nav__link">Experience</a>
+                     <a href="#projects" class="nav__link">Experience</a>
                   </li>
 
                   <li class="nav__item">
-                     <a href="#contact" class="nav__link">Contact Me</a>
+                     <a href="#contact" class="nav__link nav__link-button">Contact Me</a>
                   </li>
                </ul>
 
@@ -54,6 +54,10 @@
             </div>
 
                <div class="nav__buttons">
+                  <!-- Theme button -->
+                  <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+
                   <!-- Toogle button -->
                   <div class="nav__toggle" id="nav-toggle">
                      <i class="ri-menu-4-line"></i>
@@ -72,7 +76,7 @@
                </h1>
                <div class="home__perfil">
                   <div class="home__image">
-                     <img src="assets/img/home-perfil.jpg" alt="avatar" class="home__img">
+                     <img src="assets/img/MyImage.jpg" alt="avatar" class="home__img">
                      <div class="home__shadow"></div>
 
                      <img src="assets/img/curved-arrow.svg" alt="" class="home__arrow">
@@ -106,7 +110,7 @@
                        I deliver thorough testing solutions ensuring product reliability and excellence.
                   </p>
                   
-                  <a href="#" class="home__scroll">
+                  <a href="#about" class="home__scroll">
                      <div class="home__scroll-box">
                         <i class="ri-arrow-down-s-line"></i>
                      </div>
@@ -124,41 +128,405 @@
          <section class="about section" id="about">
             <div class="about__container container grid">
                <h2 class="section__title-1">
-                  About Me.
+                     <span>About Me.</span>
                </h2>
+
+               <div class="about__perfil">
+                  <div class="about__image">
+                     <img src="assets/img/about-perfil.jpg" alt="image" class="about__img">
+
+                     <div class="about__shadow"></div>
+
+                     <div class="geometric-box"></div>
+                     <img src="assets/img/random-lines.svg" alt="" class="about__line">
+                     <div class="about__box"></div>
+                  </div>
+               </div>
+
+               <div class="about__info">
+                  <p class="about__description">
+                     <b>I am passionate about</b> ensuring the quality of <b>software applications</b> 
+                     through <b>manual and automated testing</b>, I have years of experience in QA automation.
+                     Having worked in various companies across the financial, transportation, logistics, 
+                     healthcare, and e-commerce domains, I've consistently ensured the delivery of high-quality products 
+                     tailored to each industry's unique demands.
+                  </p>
+                  <br>
+
+                  <ul class="about__list">
+                     <li class="about__item">
+                        <b>My Skills Are:</b>
+                        <br>
+                        <br>
+                        <b>Testing Frameworks & Libraries:</b> Selenium, TestNG, JUnit, Cucumber, Appium, Cypress, Katalon Studio.
+                        <br>
+                        <b>CI/CD & Build Tools:</b> Jenkins, GitHub Actions, Maven, Gradle.
+                        <br>
+                        <b>Version Control:</b> Git & GitHub, Bitbucket, GitLab.
+                        <br>
+                        <b>API Testing:</b> Postman, RestAssured, Chrome DevTools.
+                        <br>
+                        <b>Issue & Project Tracking:</b> JIRA, TestRail, Google products.
+                        <br>
+                        <b>Performance Testing:</b> JMeter, BlazeMeter.
+                        <br>
+                        <b>Database Testing:</b> SQL, PostgreSQL, MongoDB, PgAdmin, Compass, NoSQLBooster, JDBC.
+                        <br>
+                        <b>Mobile Testing:</b> Appium, Android Studio.
+                        <br>
+                        <b>Cloud Platforms:</b> AWS, Azure, BrowserStack, Sauce Labs, Amazon S3 bucket.
+                        <br>
+                        <b>Virtualization:</b> Selenium Grid, Miscrosoft VM's.
+                        <br>
+                        <b>Security Testing:</b> Burp Suite.
+                        <br>
+                        <b>Collaboration & Documentation:</b> Slack, Confluence, Teams.
+                        <br>
+                        <b>Other Tools & IDE's:</b> IntelIj, Eclipse, Bash Terminal.
+                        <br>
+                        <b>Programming Languages:</b> Java, JavaScript, CSS, HTML.
+                        
+                     </li>
+                  </ul>
+
+                  <div class="about__buttons">
+                     <a href="#contact" class="button">
+                        <i class="ri-send-plane-line"></i> Contact Me
+                     </a>
+                     
+                     <a href="https://www.linkedin.com/in/dmkostiuk/" target="_blank" class="button__ghost">
+                        <i class="ri-linkedin-box-line"></i>
+                     </a>
+                  </div>
+               </div>
             </div>
             
          </section>
 
          <!--==================== SERVICES ====================-->
-         <section class="services section">
-            
+         <section class="services section" id="services">
+            <h2 class="section__title-2">
+               <span>What I can do.</span>
+            </h2>
+               <div class="services__container container grid">
+                  <article class="services__card">
+                     <div class="services__border"></div>
+
+                     <div class="services__content">
+                        <div class="services__icon">
+                           <div class="services__box ri-code-box-line"></div>
+                           <i class="ri-code-box-line"></i>
+                        </div>
+
+                        <h2 class="services__title">Test Automation Framework & Development</h2>
+
+                        <p class="services__description">
+                           Design, setup, and maintenance of customized 
+                           test automation frameworks integrated with tools like Selenium,
+                            Appium, Cucumber, TestNG and JUnit. This encompasses both the foundation 
+                            of the framework and the creation of automated functional, regression,
+                             and smoke tests. Integration into CI/CD pipelines ensures seamless
+                              execution in development cycles. Api and Db automation with Rest Assured, JDBC and MongoDb libraries.
+
+                        </p>
+                     </div>
+                  </article>
+
+                  <article class="services__card">
+                     <div class="services__border"></div>
+
+                     <div class="services__content">
+                        <div class="services__icon">
+                           <div class="services__box ri-flask-line"></div>
+                           <i class="ri-flask-line"></i>
+                        </div>
+
+                        <h2 class="services__title">Functional, Front-end & Back-end Testing</h2>
+
+                        <p class="services__description">
+                           Deliver a comprehensive testing process that
+                            covers a wide array of methodologies, 
+                            including black-box, grey-box, functional, 
+                            integration, end-to-end, regression, sanity, 
+                            and smoke. Expertise extends to both
+                             the user-facing aspects (front-end) and the 
+                             underlying server-side components (back-end), 
+                             including thorough testing of APIs and databases, 
+                             both relational (MySQL, PostgreSQL) and non-relational
+                              (MongoDB).
+                        </p>
+                     </div>
+                  </article>
+
+                  <article class="services__card">
+                     <div class="services__border"></div>
+
+                     <div class="services__content">
+                        <div class="services__icon">
+                           <div class="services__box ri-speed-up-fill"></div>
+                           <i class="ri-speed-up-fill"></i>
+                        </div>
+
+                        <h2 class="services__title">Performance & Load Testing</h2>
+
+                        <p class="services__description">
+                           Identify bottlenecks and ensure scalability 
+                           by designing and executing performance tests. 
+                           Tools like Postman, RestAssured, Jackson, JMeter and BlazeMeter are utilized 
+                           to guarantee that applications can handle anticipated 
+                           user loads and respond efficiently.
+                        </p>
+                     </div>
+                  </article>
+
+                  <!-- <article class="services__card">
+                     <div class="services__border"></div>
+
+                     <div class="services__content">
+                        <div class="services__icon">
+                           <div class="services__box ri-flashlight-line"></div>
+                           <i class="ri-flashlight-line"></i>
+                        </div>
+
+                        <h2 class="services__title">Test Strategy Planning & QA Process Management</h2>
+
+                        <p class="services__description">
+                           Design and implement robust test strategies
+                            tailored to the project's needs. Expertise
+                             in managing the QA process, conducting Knowledge
+                              Transfer (KT) sessions, and assisting teammates 
+                              to ensure a cohesive and efficient testing environment.
+                        </p>
+                     </div>
+                  </article> -->
+               </div>
+            </h2>
          </section>
 
          <!--==================== PROJECTS ====================-->
          <section class="projects section" id="projects">
-            
+            <h2 class="section__title-1">
+               <span>Experience.</span>
+            </h2>
+
+            <div class="projects__container container grid">
+               <article class="projects__card">
+                  <div class="projects__image">
+                     <img src="assets/img/alz.jpg" alt="image" class="projects__img">
+
+                     <a href="https://www.alz.org/" class="projects__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                     </a>
+                  </div>
+
+                  <div class="projects__content">
+                     <h2 class="projects__title">Alzheimer's Association (Healthcare.)</h2>
+                     <h3 class="projects__subtitle">
+                        Position: Lead QA Engineer</h3>
+
+                     <p class="proejcts__description">
+                        At the Alzheimer's Association, I played a key role in the quality assurance of an internal web application focused on processing, managing, and storing patient data. I developed an automation framework, integrating tools such as JUnit, Cucumber, Selenium, and Rest Assured. This framework, combined with a robust regression test suite built using open-source libraries, led to reduced test execution time, resource savings, and significant improvements in the deployment process and application quality. API testing was also a primary area of focus for me. Through active participation in Agile Scrum ceremonies and collaboration with development and DevOps teams, we maintained high standards for data management.
+                     </p>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <div class="projects__image">
+                     <img style="background-color: white;" src="assets/img/hub.png" alt="image" class="projects__img">
+                     <a href="https://www.hubgroup.com/" class="projects__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                     </a>
+                  </div>
+
+                  <div class="projects__content">
+                     <h2 class="projects__title">Hub Group (Logistics & Supply Chain.)</h2>
+                     <h3 class="projects__subtitle"> 
+                        Position: Sr. QA Engineer (SDET)</h3>
+                     <p class="proejcts__description">
+                        At Hub Group, I made significant contributions to the quality assurance of an internal application managing logistics processes for cargo deliveries across the USA and IML (International Delivery). My responsibilities included manual and automated testing across UI, API, and backend components. Additionally, I took the initiative to educate the team on best QA practices, ensuring we consistently met and exceeded quality standards in our logistics management solutions. I've added MongoDb connectivity to existing Katalon Studio framework for automated testing validations, which was an important step to gain more confidence in a final product.
+                     </p>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <div class="projects__image">
+                     <img src="assets/img/abc.jpg" alt="image" class="projects__img">
+                     <a href="https://www.abcsupply.com/" class="projects__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                     </a>
+                  </div>
+
+                  <div class="projects__content">
+                     <h2 class="projects__title">ABC Supply Co. Inc. (E-Commerce)</h2>
+                     <h3 class="projects__subtitle">
+                        Position: Software Development Engineer in Test</h3>
+                     <p class="proejcts__description">
+                        At ABC Supply Co. Inc., I contributed to the quality assurance of various applications by performing both manual and automated testing. My expertise spanned UI testing for web and mobile applications using tools like Selenium WebDriver and Appium. I delved into API testing, employing both POSTMAN for manual tests and Rest Assured for automation, and also utilized JDBC for database connectivity in automation scripts. My responsibilities included database validation, where I wrote SQL queries for manual tests, and I played a role in refining testing approaches and strategies. I ensured test automation was distributed across different environments, aligning with a Continuous Integration Process. Additionally, I engaged in the development and maintenance of a BDD framework using Cucumber and Gherkin. Collaborative tasks included interactions with developers for defect reporting and participation in use-case and test case reviews.
+                     </p>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <div class="projects__image">
+                     <img src="assets/img/gs.jpg" alt="image" class="projects__img">
+                     <a href="https://www.goldmansachs.com/" class="projects__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                     </a>
+                  </div>
+
+                  <div class="projects__content">
+                     <h2 class="projects__title">Goldman Sachs (Finance & Investment Banking.)</h2>
+                     <h3 class="projects__subtitle">
+                        Position: Quality Assurance Digital Tester</h3>
+                     <p class="proejcts__description">
+                        At Goldman Sachs, I was instrumental in ensuring the quality of an internal application designed for managing ACH transactions. I took a hands-on approach in analyzing business requirements, developing test plans, and strategizing tests. My responsibilities spanned both manual and automated testing, with a pronounced emphasis on API testing and database validations, specifically ensuring data integrity in financial transactions. Additionally, I employed data-driven testing techniques using Microsoft Excel and Apache POI, ensuring comprehensive test coverage.
+                     </p>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <div class="projects__image">
+                     <img src="assets/img/t-union.jpg" alt="image" class="projects__img">
+                     <a href="https://www.alz.org/" class="projects__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                     </a>
+                  </div>
+
+                  <div class="projects__content">
+                     <h2 class="projects__title">TransUnion (Credit Reporting & Analytics.)</h2>
+                     <h3 class="projects__subtitle">
+                        Position: Quality Assurance Engineer</h3>
+                     <p class="proejcts__description">
+                        At TransUnion, I was a quality assurance engineer for an external application designed for credit score reporting. Operating within an Agile development environment, I closely collaborated with developers, other QAs, and business analysts to ensure fluid communications and iterative releases. My expertise extended to RESTful API testing, utilizing Java's Rest-Assured library and tools like Postman. Additionally, I worked with an automation testing framework leveraging Java, TestNG, and Selenium WebDriver. My responsibilities included functional, regression, and smoke testing for web applications, as well as mobile testing for Android devices using Appium.
+                     </p>
+                  </div>
+                  
+               </article>
+            </div>
          </section>
 
          <!--==================== CONTACT ====================-->
          <section class="contact section" id="contact">
-            
+            <div class="contact__container grid">
+               <div class="contact__data">
+<h2 class="section__title-2">
+   <span>Contact Me.</span>
+</h2>
+
+<p class="contact__description-1">
+Feel free to use a form below to send me an email and I'll definitely get back to you.
+</p>
+
+<p class="contact__description-2">
+   Please enter your <b>Name</b>, <b>Email Address</b>, and <b>Subject</b>, then type your <b>Message</b>.
+</p>
+
+<div class="geometric-box"></div>
+               </div>
+
+                <div class="contact__mail">
+                  <h2 class="contact__title">
+                     Send Me A Message
+                  </h2>
+
+                  <form action="" class="contact__form" id="contact-form">
+                     <div class="contact__group">
+                        <div class="contact__box">
+                           <input type="text" name="user_name" class="contact__input" id="name" required placeholder="First Name">
+                           <label for="name" class="contact__label">First Name</label>
+                        </div>
+
+                        <div class="contact__box">
+                           <input type="email" name="user_email" class="contact__input" id="email" required placeholder="Email Address">
+                           <label for="email" class="contact__label">Email Address</label>
+                        </div>
+                     </div>
+
+                        <div class="contact__box">
+                           <input type="text" name="user_subject" class="contact__input" id="subject" required placeholder="Subject">
+                           <label for="subject" class="contact__label">Subject</label>
+                        </div>
+
+                        <div class="contact__box contact__area">
+                           <textarea name="user_message" id="message" class="contact__input" required placeholder="Message"></textarea>
+                           <label for="message" class="contact__label">Message</label>
+                        </div>
+
+                        <p class="contact__message" id="contact-message"></p>
+                        
+                        <button type="submit" class="contact__button button">
+                           <i class="ri-mail-send-line"></i> Send Message
+                        </button>
+
+
+                  </form>
+                </div>
+
+                <div class="contact__social">
+<img src="assets/img/curved-arrow.svg" alt="" class="contact__social-arrow">
+
+<div class="contact__social-data">
+   <div>
+      <p class="contact__social-description-1">
+Don't want to deal with emails?
+      </p>
+
+      <p class="contact__social-description-2">
+         Write me on my socials
+      </p>
+   </div>
+
+   <div class="contact__social-links">
+      <a href="https://www.linkedin.com/in/dmkostiuk/" target="_blank" class="contact__social-link">
+         <i class="ri-linkedin-box-line"></i>
+      </a>
+   
+      <a href="https://t.me/dmytro_kostiuk" target="_blank" class="contact__social-link">
+         <i class="ri-telegram-line"></i>
+      </a>
+   
+   </div>
+</div>
+                </div>
+            </div>
          </section>
       </main>
 
       <!--==================== FOOTER ====================-->
       <footer class="footer">
-         
+         <div class="footer__container grid">
+            <ul class="footer__links">
+               <li>
+                  <a href="#about" class="footer__link">About</a>
+               </li>
+
+               <li>
+                  <a href="#services" class="footer__link">What I can do</a>
+               </li>
+
+               <li>
+                  <a href="#projects" class="footer__link">Experience</a>
+               </li>
+            </ul>
+
+            <span class="footer__copy">
+               &#169; "All Code Is Guilty Until Proven Innocent" <i>(applicable for code only)</i>. Inspired by 
+               <a href="https://en.wikipedia.org/wiki/Presumption_of_innocence#:~:text=Sir%20William%20Garrow%20coined%20the,be%20thoroughly%20tested%20in%20court." class="footer__copy">Sir William Garrow</a>
+            </span>
+         </div>
+
       </footer>
 
       <!--========== SCROLL UP ==========-->
-      
+      <a href="#" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-s-line"></i>
+      </a>
 
       <!--=============== SCROLLREVEAL ===============-->
-      <script src=""></script>
+      <script src="assets/js/scrollreveal.min.js"></script>
       
       <!--=============== EMAIL JS ===============-->
-      
+      <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
       <!--=============== MAIN JS ===============-->
       <script src="assets/js/main.js"></script>
